@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: LightCyan;
+  color: black;
+  background-image: url(New\ Van\ 4.png);
+  background-size: cover;
+}
+
+header { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 40px;
+  background-color: SeaShell;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: PowderBlue;
+}
+
+.logo span {
+  color: Plum;
+}
+
+.navigation .menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation .menu a {
+  text-decoration: none;
+  color: RoyalBlue;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navigation .menu a:hover {
+  color: Gold;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  font-size: 16px; 
+  color: RoyalBlue;
+  padding: 10px 15px;
+  font-weight: 600;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: Linen;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: teal;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: aliceblue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main.Home {
+  padding: 100px 100px;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-top: 10px;
+}
